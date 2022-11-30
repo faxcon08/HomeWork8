@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(ANSI_RED+"1.1 First Task"+ANSI_RESET);
+        System.out.println(ANSI_RED+"1.1 First Task"+ANSI_RESET); /////////////////// 1_1  ///////////////////////
 
         int intArray [] = new int[] {1,2,3};
         double[] doubleArray = {1.57, 7.654, 9.986};
@@ -19,7 +19,7 @@ public class Main {
             charArray[4] = 'o';
             charArray[5] = 'w';
 
-        System.out.println(ANSI_RED+"1.2 Second Task"+ANSI_RESET);
+        System.out.println(ANSI_RED+"1.2 Second Task"+ANSI_RESET); ////////////////// 1_2 /////////////////
 
         for (int i=0; i<intArray.length;i++) {
             System.out.print(intArray[i]+ ((i== intArray.length-1)? "\n":","));
@@ -31,8 +31,20 @@ public class Main {
             System.out.print(c+",");
         }
         System.out.println("\b");
-        System.out.println(ANSI_RED+"1.3 Third Task"+ANSI_RESET);
-        System.out.println(ANSI_RED+"1.4 Fourth Task"+ANSI_RESET);
+
+        System.out.println(ANSI_RED+"1.3 Third Task"+ANSI_RESET); /////////////////// 1_3 /////////////////
+
+        for (int i=intArray.length-1; i>=0;) {
+            System.out.print(intArray[i]+ ((i--== 0)? "\n":","));
+        }
+        for (int i =doubleArray.length-1;i!=-1;i--) {
+            System.out.print(doubleArray[i]+((i==0)? "\n":","));
+        }
+        for(int i = charArray.length-1;i>=0;i--){
+            System.out.print(charArray[i]+((i==0)?"\n":","));
+        }
+
+        System.out.println(ANSI_RED+"1.4 Fourth Task"+ANSI_RESET); ////////////////// 1_4 /////////////////
 
 
     }
