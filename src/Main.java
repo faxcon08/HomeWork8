@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Main {
@@ -19,6 +20,17 @@ public class Main {
             charArray[5] = 'w';
 
         System.out.println(ANSI_RED+"1.2 Second Task"+ANSI_RESET);
+
+        for (int i=0; i<intArray.length;i++) {
+            System.out.print(intArray[i]+ ((i== intArray.length-1)? "\n":","));
+        }
+        for (int i =0;i<doubleArray.length;i++) {
+            System.out.print(doubleArray[i]+((i==doubleArray.length-1)? "\n":","));
+        }
+        for (char c: charArray) {
+            System.out.print(c+",");
+        }
+        System.out.println("\b");
         System.out.println(ANSI_RED+"1.3 Third Task"+ANSI_RESET);
         System.out.println(ANSI_RED+"1.4 Fourth Task"+ANSI_RESET);
 
