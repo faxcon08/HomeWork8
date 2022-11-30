@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-import java.util.Arrays;
 
 public class Main {
     public static final String ANSI_RESET = "\u001B[0m";
@@ -45,7 +43,11 @@ public class Main {
         }
 
         System.out.println(ANSI_RED+"1.4 Fourth Task"+ANSI_RESET); ////////////////// 1_4 /////////////////
-
+        int i = 0;
+        //intArray = new int[]{1,2,3,4,5,6,7,8,9};
+        for (int j : intArray) {
+            System.out.print(((j%2==1)?++j:j)+((i++==intArray.length-1)?"\n":","));
+        }
 
     }
 }
